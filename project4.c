@@ -214,13 +214,13 @@ void manipulation()
     int switchStatus = readExpander();
     if (((switchStatus >> 7) & 0x01) == 1)
     {
-        int digitA = readTemprature() / 10;
-        int digitB = readTemprature() % 10;
+        int digitA = readTemperature() / 10;
+        int digitB = readTemperature() % 10;
         writeToExpander(digitA, digitB);
     }
     else
     {
-        tempInF = convertToF(readTemperature());
+        int tempInF = convertToF(readTemperature());
         int digitA = tempInF / 10;
         int digitB = tempInF % 10;
         writeToExpander(digitA, digitB);
@@ -235,7 +235,7 @@ int main(void)
 
         //writeToExpander();
         manipulation();
-        wait_ticks(100);
+        wait_ticks(10000);
     }
     return 0;
 }
