@@ -1,7 +1,7 @@
 /*
  ===============================================================================
  Name        : Assignment_4_I2C.c
- Author      : $(Daniel Glover, Lama Dong, Jessic)
+ Author      : $(Daniel Glover, Lama Dong, Jessica)
  Version     : V1
  Copyright   : $(copyright)
  Description : main definition
